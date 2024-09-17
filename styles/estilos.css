@@ -293,7 +293,6 @@ nav a:hover {
   background-color: #F5C77D;
 }
 
-
 .divCardProductos{
   padding: 5px;
   margin: 10px;
@@ -319,9 +318,9 @@ nav a:hover {
   width: 50px;
 }
 
+/* |||||||||||||||||||| NOSOTROS ||||||||||||||||||| */
 
-
-.imgNosotros {
+.imgSobreNos {
   max-width: 100%;
   height: auto;
   margin: 15px;
@@ -329,6 +328,21 @@ nav a:hover {
   transition: filter 1s ease;
 }
 
-.imgNosotros:hover {
+.imgSobreNos:hover {
   filter: grayscale(100%);
+}
+
+.pSobreNos {
+  margin: 15px;
+  font-size: 18px;
+  color: #333;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-left: 5px solid #F5C77D;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
