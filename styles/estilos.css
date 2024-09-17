@@ -346,3 +346,9 @@ nav a:hover {
   justify-content: center;
   align-items: center;
 }
+
+/* |||||||||||||||||||| CONTACTO ||||||||||||||||||| */
+
+.btnContacto {
+  margin: 10px;
+}
