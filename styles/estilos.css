@@ -55,7 +55,7 @@ nav a:hover {
 /* ----------> Main */
 
 .divCarrusel {
-  width: 100%;
+  /* width: 100%; */
   margin: auto;
   overflow: hidden;
 }
@@ -119,13 +119,11 @@ nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* flex-wrap: wrap; */
 }
 
 .divCategorias {
   position: relative;
   padding: 20px 9px;
-  /* flex: 1 1 50%; */
 }
 
 .divCategorias a {
@@ -319,4 +317,18 @@ nav a:hover {
 
 .btnVer {
   width: 50px;
+}
+
+
+
+.imgNosotros {
+  max-width: 100%;
+  height: auto;
+  margin: 15px;
+  box-shadow: 0 0 5px #000;
+  transition: filter 1s ease;
+}
+
+.imgNosotros:hover {
+  filter: grayscale(100%);
 }
