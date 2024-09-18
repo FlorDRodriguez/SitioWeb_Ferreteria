@@ -10,35 +10,37 @@
 html {
   scroll-behavior: smooth;
 }
-/* |||||||||||||||||||| INDEX ||||||||||||||||||| */
 
 /* ----------> header */
 header {
     background-color: #3F5F7B; 
 }   
 
-.divBarra {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  width: 100%;
-}
-
 .imgLogo {
-  width: 45px;
-  height: auto;
+  width: 50px !important;
+  height: auto !important;
+  padding: 5px !important;
 }
 
-nav a {
-  color: #F4F4F4;
-  text-decoration: none;
-  font-size: 16px;
-  padding: 0 20px;    
+.navBar {
+  justify-content: center !important;
 }
 
-nav a:hover {
-  color: #F5C77D;
+.navLink {
+  color: #F4F4F4 !important;
+  text-decoration: none !important;
+  font-size: 16px !important;
+  padding: 0 10px !important;    
+}
+
+.navLink:hover {
+  color: #F5C77D !important;
+}
+
+.navbarToggler {
+  border: none;
+  justify-content: end !important;
+
 }
 
 .material-symbols-outlined {
@@ -49,10 +51,10 @@ nav a:hover {
   'opsz' 24;
   color: #F4F4F4;
   padding: 0 5px;
-
 }
 
-/* ----------> Main */
+
+/* ----------> Main INDEX*/
 
 .divCarrusel {
   /* width: 100%; */
