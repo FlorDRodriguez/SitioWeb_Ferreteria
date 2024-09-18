@@ -33,7 +33,7 @@
                         <img src="../img/logo1.png" alt="logo" class="img-fluid imgLogo">
                     </a>
                 </div>
-                <div class="col-md-6">
+                <div class="col-6 col-md-6">
                     <nav class="navbar navbar-expand-md navbar-light mx-auto">
                         <div class="collapse navbar-collapse" id="opciones">
                             <ul class="navbar-nav mx-auto navBar">
@@ -56,21 +56,51 @@
                         </div>
                     </nav>
                 </div>
-                
-                <div class="col-9 col-md-3 d-flex align-items-center justify-content-end"   >
+                <div class="col-3 col-md-3 d-flex align-items-center justify-content-end"   >
                     <button class="navbar-toggler d-md-none me-2" type="button" data-toggle="collapse" data-target="#opciones" aria-expanded="true" aria-label="Toggle navigation">
                         <span class="material-symbols-outlined"> menu </span> 
                     </button> 
                     <span class="material-symbols-outlined ms-3">shopping_cart</span>
                     <span class="material-symbols-outlined ms-3">person</span>
                 </div>
-                
             </div>
         </div>
     </header>
     
     <main>
-        <section class="sectionSubcategorias">
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 p-3 d-flex justify-content-center align-items-center divSubcategorias">
+                        <a href="">Herramientas</a>
+                        <img src="../img/herramientas.jpg" alt="herramientas" class="img-fluid">
+                    </div>
+                    <div class="col-md-4 p-3 d-flex justify-content-center align-items-center divSubcategorias">
+                        <a href="">Electricidad</a>
+                        <img src="../img/electricidad.jpg" alt="electricidad">
+                    </div>
+                    <div class="col-md-4 p-3 d-flex justify-content-center align-items-center divSubcategorias">
+                        <a href="">Bulones y tornillos</a>
+                        <img src="../img/tornillos.jpg" alt="bulonesytornillos">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 p-3 d-flex justify-content-center align-items-center divSubcategorias">
+                        <a href="">Agua y Gas</a>
+                        <img src="../img/caños.jpeg" alt="aguaygas">
+                    </div>
+                    <div class="col-md-4 p-3 d-flex justify-content-center align-items-center divSubcategorias">
+                        <a href="">Pintura</a>
+                        <img src="../img/pintura.jpg" alt="pintura">
+                    </div>
+                    <div class="col-md-4 p-3 d-flex justify-content-center align-items-center divSubcategorias">
+                        <a href="">Jardín</a>
+                        <img src="../img/jardin.jpg" alt="jardin">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="sectionSubcategorias">
             <div class="divSubcategorias">
                 <a href="">Herramientas</a>
                 <img src="../img/herramientas.jpg" alt="herramientas">
@@ -95,61 +125,12 @@
                 <a href="">Jardín</a>
                 <img src="../img/jardin.jpg" alt="jardin">
             </div>
-        </section>
-        <!-- <section class="sectionProductos">
-                <button class="flecha flecha-izquierda">←</button>
-                
-                <div class="divCards">
-                    <div class="divCard">
-                        <img class="imgProducto" src="../img/llana.webp" alt="productodestacado1">
-                        <h2>Llana Dentada</h2>
-                        <p>$ 6.375</p>
-                    </div>
-                    <div class="divCard">
-                        <img class="imgProducto" src="../img/sierra.webp" alt="productodestacado2">
-                        <h2>Sierra de Mesa</h2>
-                        <p>$ 483.650</p>
-                    </div>
-                    <div class="divCard">
-                        <img class="imgProducto" src="../img/hidrolavadora.webp" alt="productodestacado3">
-                        <h2>Hidrolavadora Alta Presión</h2>
-                        <p>$ 172.500</p>
-                    </div>
-                    <div class="divCard">
-                        <img class="imgProducto" src="../img/martillo.webp" alt="productodestacado4">
-                        <h2>Martillo Demoledor</h2>
-                        <p>$ 302.600</p>
-                    </div>
-                    <div class="divCard">
-                        <img class="imgProducto" src="../img/llaveInglesa.webp" alt="productodestacado5">
-                        <h2>Llave Inglesa Alta</h2>
-                        <p>$ 12.580</p>
-                    </div>
-                    <div class="divCard">
-                        <img class="imgProducto" src="../img/termofusor.webp" alt="productodestacado6">
-                        <h2>Termofusor 800w</h2>
-                        <p>$ 197.400</p>
-                    </div>
-                    <div class="divCard">
-                        <img class="imgProducto" src="../img/setHerramientas.webp" alt="productodestacado7">
-                        <h2>Set de Herramientas</h2>
-                        <p>$63.785</p>
-                    </div>
-                    <div class="divCard">
-                        <img class="imgProducto" src="../img/pala.webp" alt="productodestacado8">
-                        <h2>Pala Pocera</h2>
-                        <p>$ 71.280</p>
-                    </div>
-                    
-                    <button class="flecha flecha-derecha">→</button>
-                </div>
         </section> -->
-        
-        <h4 class="text-muted h4Productos">Productos destacados</h4>
         <section>
+            <h4 class="text-muted h4Productos">Productos destacados</h4>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-3 d-flex justify-content-center align-items-center ">
                         <div class="card divCardProductos">
                             <img src="../img/hidrolavadora.jpg" class="card-img-top">
                             <div class="card-body">
@@ -159,7 +140,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 d-flex justify-content-center align-items-center">
                         <div class="card divCardProductos">
                             <img src="../img/llana.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -169,7 +150,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 d-flex justify-content-center align-items-center">
                         <div class="card divCardProductos">
                             <img src="../img/sierra.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -179,7 +160,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 d-flex justify-content-center align-items-center">
                         <div class="card divCardProductos">
                             <img src="../img/martillo.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -191,7 +172,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-3 d-flex justify-content-center align-items-center">
                         <div class="card divCardProductos">
                             <img src="../img/llaveInglesa.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -201,7 +182,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 d-flex justify-content-center align-items-center">
                         <div class="card divCardProductos">
                             <img src="../img/termofusor.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -211,7 +192,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 d-flex justify-content-center align-items-center">
                         <div class="card divCardProductos">
                             <img src="../img/setHerramientas.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -221,7 +202,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 d-flex justify-content-center align-items-center">
                         <div class="card divCardProductos">
                             <img src="../img/pala.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
