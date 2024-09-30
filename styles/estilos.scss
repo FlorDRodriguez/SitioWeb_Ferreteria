@@ -160,7 +160,7 @@ header {
     border: 0; 
 }
   
-//Esyilos Envíos
+//Estilos Envíos
 .divEnvios {
     position: relative;
     a {
@@ -184,6 +184,31 @@ header {
       box-shadow: 0 0 5px #000;
     }
   }
+
+//Estilos Newsletter
+.divNewsletter {
+    box-shadow: 0 0 5px #000;
+    padding: 10px;
+    margin-bottom: 15px;
+    p {
+        margin: 0;
+    }
+    label {
+        font-size: 12px;
+    }
+}
+
+.divNovedades {
+    display: flex;
+    align-items: center;
+    i {
+        margin-right: 10px; 
+    }
+    a {
+        margin-right: 10px; 
+        align-items: end;
+    }
+}
 
 //Estilos footer
 .footer {
@@ -262,6 +287,9 @@ header {
     padding-top: 10px;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    &:hover{
+      transform: skew(30deg);
+    }
 }
 
 .divCardProductos {
@@ -270,6 +298,9 @@ header {
     box-shadow: 0 0 3px #000;
     width: 300px;
     height: auto;
+    &:hover {
+      transform: scale(1.05);
+    }
     h6 {
         text-align: center;
         font-weight: bold;

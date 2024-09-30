@@ -168,6 +168,30 @@ header {
   box-shadow: 0 0 5px #000;
 }
 
+.divNewsletter {
+  box-shadow: 0 0 5px #000;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.divNewsletter p {
+  margin: 0;
+}
+.divNewsletter label {
+  font-size: 12px;
+}
+
+.divNovedades {
+  display: flex;
+  align-items: center;
+}
+.divNovedades i {
+  margin-right: 10px;
+}
+.divNovedades a {
+  margin-right: 10px;
+  align-items: end;
+}
+
 .footer {
   background-color: #3F5F7B;
   padding: 10px 0;
@@ -247,6 +271,9 @@ header {
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
+.h4Productos:hover {
+  transform: skew(30deg);
+}
 
 .divCardProductos {
   padding: 5px;
@@ -254,6 +281,9 @@ header {
   box-shadow: 0 0 3px #000;
   width: 300px;
   height: auto;
+}
+.divCardProductos:hover {
+  transform: scale(1.05);
 }
 .divCardProductos h6 {
   text-align: center;
