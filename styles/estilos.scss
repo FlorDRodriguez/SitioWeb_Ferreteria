@@ -4,7 +4,7 @@
 $color1: #3F5F7B;
 $color2: #F4F4F4;
 $color3: #F5C77D;
-$color4: rgba(63, 95, 123, 0.5);
+$color4: rgba(63, 95, 123, 0.8);
 $color5: #333;
 $color6: rgba(0, 0, 0, 0.5);
 $font-family: "Nunito", sans-serif;
@@ -110,27 +110,28 @@ header {
     padding: 10px;
     border-radius: 5px;
     margin: 20px 0;
-    text-align: justify;
+    text-align: center;
 }
 
 .aNosotros {
     padding: 10px;
     background-color: $color3;
     color: #fff;
-    text-decoration: none;
+    text-decoration: none !important;
     border: none;
     cursor: pointer;
     border-radius: 5px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     &:hover {
-        background-color: $color5;
+        background-color: $color1;
+        color: #fff;
     }
 }
   
 //Estilos categorias
 .divCategorias {
     position: relative;
-    padding: 15px 9px;
+    padding: 15px 0px;
     a {
       @include absoluteCenter;
       width: 180px;
@@ -148,26 +149,20 @@ header {
       }
     }
     img {
-      width: 490px;
-      height: auto;
       box-shadow: 0 0 5px #000;
     }
   }
 
 // Estilos Mapa
-.divMapa {
-    padding: 0 9px;
-    .iframeMapa {
-      width: 430px;
-      height: 280px;
-      border: 0; 
-    }
-  }
+.iframeMapa {
+    width: 450px;
+    height: 280px;
+    border: 0; 
+}
   
 //Esyilos Envíos
 .divEnvios {
     position: relative;
-    padding: 0 9px;
     a {
       @include absoluteCenter;
       width: 180px;
@@ -179,8 +174,7 @@ header {
       text-decoration: none;
       border: none;
       cursor: pointer;
-      z-index: 1;
-  
+      z-index: 1; 
       &:hover {
         background-color: $color3;
       }
@@ -227,6 +221,14 @@ header {
     border-radius: 50%;
     border: 3px solid #fff;
     box-shadow: 0 0 5px #fff;
+}
+
+.aWhatsapp {
+    position: fixed;
+    bottom: 50px;
+    right: 25px;
+    font-size: 50px;
+    text-align: center;
 }
 
 //Estilos subcategorias
@@ -306,4 +308,11 @@ header {
 // Estilo botón contacto
 .btnContacto {
     margin: 10px;
+}
+
+.bodyFondo {
+    background-image: url('/img/fondoContacto1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }

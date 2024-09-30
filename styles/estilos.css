@@ -83,31 +83,32 @@ header {
 }
 
 .pNosotros {
-  background-color: rgba(63, 95, 123, 0.5);
+  background-color: rgba(63, 95, 123, 0.8);
   color: #fff;
   padding: 10px;
   border-radius: 5px;
   margin: 20px 0;
-  text-align: justify;
+  text-align: center;
 }
 
 .aNosotros {
   padding: 10px;
   background-color: #F5C77D;
   color: #fff;
-  text-decoration: none;
+  text-decoration: none !important;
   border: none;
   cursor: pointer;
   border-radius: 5px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 .aNosotros:hover {
-  background-color: #333;
+  background-color: #3F5F7B;
+  color: #fff;
 }
 
 .divCategorias {
   position: relative;
-  padding: 15px 9px;
+  padding: 15px 0px;
 }
 .divCategorias a {
   position: absolute;
@@ -116,7 +117,7 @@ header {
   transform: translate(-50%, -50%);
   text-align: center;
   width: 180px;
-  background-color: rgba(63, 95, 123, 0.5);
+  background-color: rgba(63, 95, 123, 0.8);
   color: white;
   padding: 10px;
   font-size: 15px;
@@ -130,23 +131,17 @@ header {
   background-color: #F5C77D;
 }
 .divCategorias img {
-  width: 490px;
-  height: auto;
   box-shadow: 0 0 5px #000;
 }
 
-.divMapa {
-  padding: 0 9px;
-}
-.divMapa .iframeMapa {
-  width: 430px;
+.iframeMapa {
+  width: 450px;
   height: 280px;
   border: 0;
 }
 
 .divEnvios {
   position: relative;
-  padding: 0 9px;
 }
 .divEnvios a {
   position: absolute;
@@ -155,7 +150,7 @@ header {
   transform: translate(-50%, -50%);
   text-align: center;
   width: 180px;
-  background-color: rgba(63, 95, 123, 0.5);
+  background-color: rgba(63, 95, 123, 0.8);
   color: white;
   padding: 10px;
   font-size: 15px;
@@ -208,6 +203,14 @@ header {
   border-radius: 50%;
   border: 3px solid #fff;
   box-shadow: 0 0 5px #fff;
+}
+
+.aWhatsapp {
+  position: fixed;
+  bottom: 50px;
+  right: 25px;
+  font-size: 50px;
+  text-align: center;
 }
 
 .divSubcategorias {
@@ -289,4 +292,11 @@ header {
 
 .btnContacto {
   margin: 10px;
+}
+
+.bodyFondo {
+  background-image: url("/img/fondoContacto1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=estilos.css.map */
