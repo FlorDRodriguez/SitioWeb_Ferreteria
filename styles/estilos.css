@@ -176,8 +176,10 @@ header {
 
 .divNewsletter {
   box-shadow: 0 0 5px #000;
-  padding-top: 0;
+  padding-top: 10px;
   padding-bottom: 0;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-top: 15px;
   margin-bottom: 25px;
 }
@@ -333,6 +335,8 @@ header {
 
 .btnContacto {
   margin: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 .bodyFondo {
