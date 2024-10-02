@@ -27,7 +27,7 @@
         <title>Contacto</title>
     </head>
     <body class="bodyFondo">
-        <header>
+        <header class="text-center position-relative">
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col-3 col-md-3 d-flex align-items-center justify-content-start">
@@ -35,9 +35,9 @@
                             <img src="../img/logo1.png" alt="logo" class="img-fluid imgLogo">
                         </a>
                     </div>
-                    <div class="col-6 col-md-6 ">
+                    <div class="col-6 col-md-6">
                         <nav class="navbar navbar-expand-md navbar-light mx-auto">
-                            <div class="collapse navbar-collapse" id="opciones">
+                            <div class="collapse navbar-collapse " id="opciones">
                                 <ul class="navbar-nav mx-auto navBar">
                                     <li class="nav-item ">
                                         <a class="nav-link navLink" href="../index.html">Inicio</a>
@@ -52,14 +52,14 @@
                                         <a class="nav-link navLink" href="./nosotros.html">Nosotros</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link navLink" href="./contacto.html">Contactanos</a>
+                                        <a class="nav-link navLink" href="./contacto.html">Contacto</a>
                                     </li>
                                 </ul>
                             </div>
                         </nav>
                     </div>
-                    <div class="col-3 col-md-3 d-flex align-items-center justify-content-end"   >
-                        <button class="navbar-toggler d-md-none me-2" type="button" data-toggle="collapse" data-target="#opciones" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="col-3 col-md-3 d-flex align-items-center justify-content-end">
+                        <button class="navbar-toggler d-md-none me-2" type="button" onclick="toggleMenu()" aria-expanded="true" aria-label="Toggle navigation">
                             <span class="material-symbols-outlined"> menu </span> 
                         </button> 
                         <span class="material-symbols-outlined ms-3">shopping_cart</span>
@@ -67,10 +67,17 @@
                     </div>
                 </div>
             </div>
+            <div class="menu" id="menu">
+                <a class="nav-link navLink" href="../index.html">Inicio</a>
+                <a class="nav-link navLink" href="./ferreteria.html">Ferretería</a>
+                <a class="nav-link navLink" href="./corralon.html">Corralón</a>
+                <a class="nav-link navLink" href="./nosotros.html">Nosotros</a>
+                <a class="nav-link navLink" href="./contacto.html">Contactanos</a>
+            </div>
         </header>
         <main>
             <div class="container mt-5">
-                <h2>Contacto</h2>
+                <h2>Contactanos</h2>
                 <form>
                     <div class="row">
                         <div class="col-12 col-md-6">
@@ -198,6 +205,18 @@
                 <i class="fa-solid fa-chevron-up"></i>
             </a>
         </div>
+        <!-- Scripts menú hamburguesa -->
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById('menu');
+                if (menu.style.display === 'block') {
+                    menu.style.display = 'none';
+                } else {
+                    menu.style.display = 'block';
+                }
+            }
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
 

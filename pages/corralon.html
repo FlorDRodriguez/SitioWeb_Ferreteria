@@ -20,6 +20,8 @@
             integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- Material Symbols Outlined: Google Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />    
+        <!-- AOS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
         <!-- Estilos CSS -->
         <link rel="stylesheet" href="../styles/estilos.css">
         <!-- Favicon -->
@@ -27,7 +29,7 @@
         <title>Corralón</title>
     </head>
     <body>
-        <header>
+        <header class="text-center position-relative">
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col-3 col-md-3 d-flex align-items-center justify-content-start">
@@ -37,7 +39,7 @@
                     </div>
                     <div class="col-6 col-md-6">
                         <nav class="navbar navbar-expand-md navbar-light mx-auto">
-                            <div class="collapse navbar-collapse" id="opciones">
+                            <div class="collapse navbar-collapse " id="opciones">
                                 <ul class="navbar-nav mx-auto navBar">
                                     <li class="nav-item ">
                                         <a class="nav-link navLink" href="../index.html">Inicio</a>
@@ -52,14 +54,14 @@
                                         <a class="nav-link navLink" href="./nosotros.html">Nosotros</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link navLink" href="./contacto.html">Contactanos</a>
+                                        <a class="nav-link navLink" href="./contacto.html">Contacto</a>
                                     </li>
                                 </ul>
                             </div>
                         </nav>
-                    </div>                
-                    <div class="col-3 col-md-3 d-flex align-items-center justify-content-end"   >
-                        <button class="navbar-toggler d-md-none me-2" type="button" data-toggle="collapse" data-target="#opciones" aria-expanded="true" aria-label="Toggle navigation">
+                    </div>
+                    <div class="col-3 col-md-3 d-flex align-items-center justify-content-end">
+                        <button class="navbar-toggler d-md-none me-2" type="button" onclick="toggleMenu()" aria-expanded="true" aria-label="Toggle navigation">
                             <span class="material-symbols-outlined"> menu </span> 
                         </button> 
                         <span class="material-symbols-outlined ms-3">shopping_cart</span>
@@ -67,34 +69,41 @@
                     </div>
                 </div>
             </div>
+            <div class="menu" id="menu">
+                <a class="nav-link navLink" href="../index.html">Inicio</a>
+                <a class="nav-link navLink" href="./ferreteria.html">Ferretería</a>
+                <a class="nav-link navLink" href="./corralon.html">Corralón</a>
+                <a class="nav-link navLink" href="./nosotros.html">Nosotros</a>
+                <a class="nav-link navLink" href="./contacto.html">Contactanos</a>
+            </div>
         </header>
         <main>
             <section>
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-4 p-3 d-flex justify-content-center align-items-center divSubcategorias">
+                        <div class="col-md-4 p-3 d-flex justify-content-center align-items-center divSubcategorias" data-aos="zoom-in" data-aos-duration="1000">
                             <a href="">Cemento</a>
                             <img src="../img/cemento.jpg" alt="cemento" class="img-fluid">
                         </div>
-                        <div class="col-md-4 p-3 d-flex justify-content-center align-items-center divSubcategorias">
+                        <div class="col-md-4 p-3 d-flex justify-content-center align-items-center divSubcategorias" data-aos="zoom-in" data-aos-duration="1000">
                             <a href="">Hierro</a>
                             <img src="../img/hierro.jpg" alt="hierro" class="img-fluid">
                         </div>
-                        <div class="col-md-4 p-3 d-flex justify-content-center align-items-center divSubcategorias">
+                        <div class="col-md-4 p-3 d-flex justify-content-center align-items-center divSubcategorias" data-aos="zoom-in" data-aos-duration="1000">
                             <a href="">Membrana</a>
                             <img src="../img/membrana.jpg" alt="membrana" class="img-fluid">
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-4 p-3 d-flex justify-content-center align-items-center divSubcategorias">
+                        <div class="col-md-4 p-3 d-flex justify-content-center align-items-center divSubcategorias" data-aos="zoom-in" data-aos-duration="1000">
                             <a href="">Ladrillos</a>
                             <img src="../img/corralon.jpg" alt="ladrillos" class="img-fluid">
                         </div>
-                        <div class="col-md-4 p-3 d-flex justify-content-center align-items-center divSubcategorias">
+                        <div class="col-md-4 p-3 d-flex justify-content-center align-items-center divSubcategorias" data-aos="zoom-in" data-aos-duration="1000">
                             <a href="">Techos</a>
                             <img src="../img/techos.jpg" alt="techos" class="img-fluid">
                         </div>
-                        <div class="col-md-4 p-3 d-flex justify-content-center align-items-center divSubcategorias">
+                        <div class="col-md-4 p-3 d-flex justify-content-center align-items-center divSubcategorias" data-aos="zoom-in" data-aos-duration="1000">
                             <a href="">Áridos</a>
                             <img src="../img/carrusel3.jpg" alt="aridos" class="img-fluid">
                         </div>
@@ -104,7 +113,7 @@
             <section>
                 <h4 class="text-muted h4Productos">Productos destacados</h4>
                 <div class="container">
-                    <div class="row">
+                    <div class="row" data-aos="zoom-in" data-aos-duration="1500">
                         <div class="col-md-3 d-flex justify-content-center align-items-center">
                             <div class="card divCardProductos">
                                 <img src="../img/hierro2.jpg" alt="hierro" class="card-img-top">
@@ -146,7 +155,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" data-aos="zoom-in" data-aos-duration="1500">
                         <div class="col-md-3 d-flex justify-content-center align-items-center">
                             <div class="card divCardProductos">
                                 <img src="../img/cemento2.jpg" class="card-img-top" alt="cemento">
@@ -207,6 +216,23 @@
                 <i class="fa-solid fa-chevron-up"></i>
             </a>
         </div>
+        <!-- Scripts menú hamburguesa -->
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById('menu');
+                if (menu.style.display === 'block') {
+                    menu.style.display = 'none';
+                } else {
+                    menu.style.display = 'block';
+                }
+            }
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Scripts AOS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
 

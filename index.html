@@ -29,7 +29,7 @@
         <title>Inicio</title>
     </head>
     <body>
-        <header>
+        <header class="text-center position-relative">
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col-3 col-md-3 d-flex align-items-center justify-content-start">
@@ -54,14 +54,14 @@
                                         <a class="nav-link navLink" href="./pages/nosotros.html">Nosotros</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link navLink" href="./pages/contacto.html">Contactanos</a>
+                                        <a class="nav-link navLink" href="./pages/contacto.html">Contacto</a>
                                     </li>
                                 </ul>
                             </div>
                         </nav>
                     </div>
                     <div class="col-3 col-md-3 d-flex align-items-center justify-content-end">
-                        <button class="navbar-toggler d-md-none me-2" type="button" data-toggle="collapse" data-target="#opciones" aria-expanded="true" aria-label="Toggle navigation">
+                        <button class="navbar-toggler d-md-none me-2" type="button" onclick="toggleMenu()" aria-expanded="true" aria-label="Toggle navigation">
                             <span class="material-symbols-outlined"> menu </span> 
                         </button> 
                         <span class="material-symbols-outlined ms-3">shopping_cart</span>
@@ -69,7 +69,14 @@
                     </div>
                 </div>
             </div>
-        </header>
+            <div class="menu" id="menu">
+                <a class="nav-link navLink" href="./index.html">Inicio</a>
+                <a class="nav-link navLink" href="./pages/ferreteria.html">Ferretería</a>
+                <a class="nav-link navLink" href="./pages/corralon.html">Corralón</a>
+                <a class="nav-link navLink" href="./pages/nosotros.html">Nosotros</a>
+                <a class="nav-link navLink" href="./pages/contacto.html">Contactanos</a>
+            </div>
+        </header> 
         <main>
             <!-- Carrusel -->
             <section>
@@ -95,7 +102,7 @@
             <!-- Categorías -->
             <section>
                 <div class="container">
-                    <div class="row">
+                    <div class="row"> 
                         <div class="col-12 col-md-6 d-flex align-items-center justify-content-start">
                             <div class="divCategorias" data-aos="zoom-in" data-aos-duration="1500">
                                 <a href="./pages/ferreteria.html">Ferretería</a>
@@ -116,12 +123,12 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-6 mb-2 d-flex align-items-center justify-content-start pe-10">
-                            <div data-aos="zoom-in" data-aos-duration="1500">
-                                <iframe class="iframeMapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13389.896628125218!2d-68.80461244458007!3d-32.96489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0cf336be3bd1%3A0x8ad9d1f78fd83754!2sFerreteria%20jumase!5e0!3m2!1ses!2sar!4v1724266007949!5m2!1ses!2sar" class="w-100" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            <div class="divCategorias" data-aos="zoom-in" data-aos-duration="1500">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13389.896628125218!2d-68.80461244458007!3d-32.96489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0cf336be3bd1%3A0x8ad9d1f78fd83754!2sFerreteria%20jumase!5e0!3m2!1ses!2sar!4v1724266007949!5m2!1ses!2sar" class="w-100" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 mb-3 d-flex align-items-center justify-content-start">
-                            <div class="divEnvios" data-aos="zoom-in" data-aos-duration="1500">
+                            <div class="divCategorias" data-aos="zoom-in" data-aos-duration="1500">
                                 <a href="">Métodos de envío</a>
                                 <img class="imgEnvios img-fluid" src="./img/envios.jpg" alt="envios">
                             </div>
@@ -140,7 +147,7 @@
                                     <p>Recibí nuestras últimas ofertas y novedades.</p>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+                            <div class="col-12 col-md-6 d-flex justify-content-center">
                                 <div>
                                     <div class="form-group">
                                         <input type="email" class="form-control" id="email" placeholder="Correo Electrónico">
@@ -170,7 +177,19 @@
                 <i class="fa-solid fa-chevron-up"></i>
             </a>
         
-        </div>        
+        </div>
+        <!-- Scripts menú hamburguesa -->
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById('menu');
+                if (menu.style.display === 'block') {
+                    menu.style.display = 'none';
+                } else {
+                    menu.style.display = 'block';
+                }
+            }
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
         <!-- Scripts AOS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
         <script>
