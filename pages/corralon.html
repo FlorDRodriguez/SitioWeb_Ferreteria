@@ -64,8 +64,8 @@
                         <button class="navbar-toggler d-md-none me-2" type="button" onclick="toggleMenu()" aria-expanded="true" aria-label="Toggle navigation">
                             <span class="material-symbols-outlined"> menu </span> 
                         </button> 
-                        <span class="material-symbols-outlined ms-3">shopping_cart</span>
-                        <span class="material-symbols-outlined ms-3">person</span>
+                        <span class="material-symbols-outlined ms-3" id="icono-carrito" onclick="location.href='./carrito.html'">shopping_cart</span>
+                        <span class="material-symbols-outlined ms-3" id="icono-usuario">person</span>
                     </div>
                 </div>
             </div>
@@ -79,32 +79,32 @@
         </header>
         <main>
             <section>
-                <div class="container">
+                <div class="container" id="seleccionSubcategoria">
                     <div class="row">
                         <div class="col-md-4 p-3 d-flex justify-content-center align-items-center divSubcategorias" data-aos="zoom-in" data-aos-duration="1000">
-                            <a href="">Cemento</a>
+                            <a href="./productos.html" id="cemento">Cemento</a>
                             <img src="../img/cemento.jpg" alt="cemento" class="img-fluid">
                         </div>
                         <div class="col-md-4 p-3 d-flex justify-content-center align-items-center divSubcategorias" data-aos="zoom-in" data-aos-duration="1000">
-                            <a href="">Hierro</a>
+                            <a href="./productos.html" id="hierro">Hierro</a>
                             <img src="../img/hierro.jpg" alt="hierro" class="img-fluid">
                         </div>
                         <div class="col-md-4 p-3 d-flex justify-content-center align-items-center divSubcategorias" data-aos="zoom-in" data-aos-duration="1000">
-                            <a href="">Membrana</a>
+                            <a href="./productos.html" id="membrana">Membrana</a>
                             <img src="../img/membrana.jpg" alt="membrana" class="img-fluid">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-4 p-3 d-flex justify-content-center align-items-center divSubcategorias" data-aos="zoom-in" data-aos-duration="1000">
-                            <a href="">Ladrillos</a>
+                            <a href="./productos.html" id="ladrillos">Ladrillos</a>
                             <img src="../img/corralon.jpg" alt="ladrillos" class="img-fluid">
                         </div>
                         <div class="col-md-4 p-3 d-flex justify-content-center align-items-center divSubcategorias" data-aos="zoom-in" data-aos-duration="1000">
-                            <a href="">Techos</a>
+                            <a href="./productos.html" id="techos">Techos</a>
                             <img src="../img/techos.jpg" alt="techos" class="img-fluid">
                         </div>
                         <div class="col-md-4 p-3 d-flex justify-content-center align-items-center divSubcategorias" data-aos="zoom-in" data-aos-duration="1000">
-                            <a href="">Áridos</a>
+                            <a href="./productos.html" id="aridos">Áridos</a>
                             <img src="../img/carrusel3.jpg" alt="aridos" class="img-fluid">
                         </div>
                     </div>
@@ -233,6 +233,13 @@
         <script>
             AOS.init();
         </script>
+        <script>
+            contenedorSubcategoria = document.getElementById("seleccionSubcategoria");
+            contenedorSubcategoria.addEventListener("click", (e) => {
+                const subcategoriaSeleccionada = e.target.id;
+                localStorage.setItem("subcategoriaSeleccionada", subcategoriaSeleccionada);
+            });
+        </script> 
     </body>
 </html>
 

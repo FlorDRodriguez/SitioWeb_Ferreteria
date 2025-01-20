@@ -1,7 +1,0 @@
-Modificaciones para mejorar el SEO:
-
-- Eliminé metadatos de todas las imagenes
-- Optimicé todas las imagenes
-- Agregué atributo 'alt' a todas las imagenes
-- Agregué keywords en todos los archivos html
-- Agregué description en todos los archivos html

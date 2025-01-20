@@ -288,12 +288,20 @@ header {
   transform: scale(1.5);
 }
 
+.contenedor {
+  display: grid; 
+  grid-template-columns: repeat(3, 250px);
+  justify-content: center;
+
+}
+
 .divCardProductos {
-  padding: 5px;
-  margin: 10px;
+  margin: 10px 0;
   box-shadow: 0 0 3px #000;
-  width: 300px;
+  width: 200px;
   height: auto;
+  justify-self: center; 
+  align-items: center; 
 }
 .divCardProductos:hover {
   transform: scale(1.05);
@@ -305,6 +313,10 @@ header {
 .divCardProductos p {
   text-align: center;
   color: #F5C77D;
+}
+
+.btn { 
+  padding: 5px 30px; 
 }
 
 .imgSobreNos {
@@ -344,4 +356,22 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}/*# sourceMappingURL=estilos.css.map */
+}
+
+.material-symbols-outlined {
+  cursor: pointer;
+}
+
+.small-swal {
+  width: 300px !important;
+  height: 300px !important;
+  font-size: 10px;
+}
+
+.totalCompra {
+  text-align: center;
+}
+
+.opciones-pago {
+  display: none;
+}
