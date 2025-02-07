@@ -40,18 +40,18 @@
                             <img src="./img/logo1.png" alt="logo" class="img-fluid imgLogo">
                         </a>
                     </div>
-                    <div class="col-6 col-md-6">
+                    <div class="col-6 col-md-6" id="seleccionCategoriaHeader">
                         <nav class="navbar navbar-expand-md navbar-light mx-auto">
-                            <div class="collapse navbar-collapse " id="opciones">
-                                <ul class="navbar-nav mx-auto navBar">
+                            <div class="collapse navbar-collapse ">
+                                <ul class="navbar-nav mx-auto navBar" >
                                     <li class="nav-item ">
                                         <a class="nav-link navLink" href="./index.html">Inicio</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link navLink" href="./pages/ferreteria.html">Ferretería</a>
+                                        <a class="nav-link navLink" href="./pages/ferreteria.html" id="ferreteria">Ferretería</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link navLink" href="./pages/corralon.html">Corralón</a>
+                                        <a class="nav-link navLink" href="./pages/corralon.html" id="corralon">Corralón</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link navLink" href="./pages/nosotros.html">Nosotros</a>
@@ -72,10 +72,10 @@
                     </div>
                 </div>
             </div>
-            <div class="menu" id="menu">
+            <div class="menu" id="seleccionCategoriaHeader">
                 <a class="nav-link navLink" href="./index.html">Inicio</a>
-                <a class="nav-link navLink" href="./pages/ferreteria.html">Ferretería</a>
-                <a class="nav-link navLink" href="./pages/corralon.html">Corralón</a>
+                <a class="nav-link navLink" href="./pages/ferreteria.html" id="ferreteria">Ferretería</a>
+                <a class="nav-link navLink" href="./pages/corralon.html" id="corralon">Corralón</a>
                 <a class="nav-link navLink" href="./pages/nosotros.html">Nosotros</a>
                 <a class="nav-link navLink" href="./pages/contacto.html">Contactanos</a>
             </div>
@@ -180,8 +180,7 @@
                 <i class="fa-solid fa-chevron-up"></i>
             </a>
         
-        </div>
-        
+        </div>   
         <!-- Scripts menú hamburguesa -->   
         <script>
             function toggleMenu() {
@@ -199,13 +198,7 @@
         <script>
             AOS.init();
         </script>
-        <script>
-            const contenedorCategoria = document.getElementById("seleccionCategoria")
-            contenedorCategoria.addEventListener("click", (e) => {
-                const categoriaSeleccionada = e.target.id;
-                localStorage.setItem("categoriaSeleccionada", categoriaSeleccionada);
-            });
-        </script>
+        <script src="/mostrarProductos.js"></script>  
     </body>
 </html>
 
